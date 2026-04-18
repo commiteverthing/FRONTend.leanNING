@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emmet Cheat Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #38bdf8;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #1e293b;
+    }
+    code {
+      background: #020617;
+      padding: 5px 8px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🚀 Emmet Cheat Sheet</h1>
+
+<div class="section">
+  <h2>Core Syntax</h2>
+  <p><code>div&gt;p</code> → Child</p>
+  <p><code>h1+p</code> → Sibling</p>
+  <p><code>li*3</code> → Multiplication</p>
+  <p><code>div&gt;ul&gt;li^p</code> → Climb Up</p>
+  <p><code>div&gt;(header+footer)</code> → Grouping</p>
+</div>
+
+<div class="section">
+  <h2>Classes & IDs</h2>
+  <p><code>div#app</code></p>
+  <p><code>div.container</code></p>
+  <p><code>div.box.red.large</code></p>
+  <p><code>input[type=text]</code></p>
+</div>
+
+<div class="section">
+  <h2>Numbering</h2>
+  <p><code>li.item$*3</code></p>
+  <p><code>li.item$$*3</code></p>
+  <p><code>li.item$@-*3</code></p>
+</div>
+
+<div class="section">
+  <h2>Text Content</h2>
+  <p><code>p{Hello World}</code></p>
+  <p><code>li{Item $}*3</code></p>
+</div>
+
+<div class="section">
+  <h2>HTML Structures</h2>
+  <p><code>!</code> → Boilerplate</p>
+  <p><code>nav&gt;ul&gt;li*5&gt;a</code></p>
+  <p><code>form&gt;input:text+input:password+button</code></p>
+  <p><code>table&gt;tr*3&gt;td*4</code></p>
+</div>
+
+<div class="section">
+  <h2>Form Shortcuts</h2>
+  <p><code>input:text</code></p>
+  <p><code>input:email</code></p>
+  <p><code>input:password</code></p>
+  <p><code>input:number</code></p>
+  <p><code>input:checkbox</code></p>
+  <p><code>textarea</code></p>
+</div>
+
+<div class="section">
+  <h2>CSS Shortcuts</h2>
+  <p><code>m10</code> → margin</p>
+  <p><code>p10-20</code> → padding</p>
+  <p><code>w100</code>, <code>h50</code></p>
+  <p><code>d:flex</code></p>
+  <p><code>jc:center</code></p>
+  <p><code>ai:center</code></p>
+  <p><code>bgc:red</code></p>
+  <p><code>c:#fff</code></p>
+</div>
+
+<div class="section">
+  <h2>Advanced</h2>
+  <p><code>lorem</code></p>
+  <p><code>lorem10</code></p>
+  <p><code>a[href="#"]{Click}</code></p>
+</div>
+
+<div class="section">
+  <h2>Practice Patterns</h2>
+  <p><code>ul&gt;li.item$*5</code></p>
+  <p><code>header&gt;nav&gt;ul&gt;li*4&gt;a</code></p>
+  <p><code>form&gt;input:text+input:email+textarea+button</code></p>
+</div>
+
+</body>
+</html>

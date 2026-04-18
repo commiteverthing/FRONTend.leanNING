@@ -1,0 +1,79 @@
+/* 🔥 1. RESET (remove browser defaults) */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔤 2. ROOT VARIABLES (for consistency) */
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #111827;
+  --text-color: #374151;
+  --bg-color: #ffffff;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+/* 📄 3. BODY BASE */
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/* 🖼️ 4. IMAGES */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 🔗 5. LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 📋 6. LISTS */
+ul {
+  list-style: none;
+}
+
+/* 🔘 7. BUTTONS */
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* 🧾 8. INPUTS */
+input,
+textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+/* 📐 9. CONTAINER (VERY IMPORTANT) */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🔥 10. SECTION SPACING */
+section {
+  padding: 60px 0;
+}
+
+/* 🧠 11. HEADINGS */
+h1, h2, h3 {
+  color: var(--secondary-color);
+  line-height: 1.2;
+}
+
+/* ✨ 12. SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
