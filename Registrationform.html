@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+    <h1 style="color: red; background-color: yellow;">Register Form</h1>
+    <br>
+    <label for="name">Enter your name</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <br>
+    
+    <label for="Password">Password</label>
+    <input type="password" name="Password"  id="Password">
+    <br>
+    <br>
+    <label for="adress">Enter your adress</label>
+    <textarea name="adress" id="adress"></textarea>
+    <br>
+    <br>
+    
+    <label for="select game">Select your Game</label><br>
+    
+    <input type="checkbox" id="hockey" name="hockey"
+    value="hockey" >
+
+    <label for="hockey">hockey</label>
+
+    <br>
+    <input type="checkbox" id="Football" name="Football"
+    value="Football" >
+    <label for="Football">Football</label>
+
+
+    <br>
+    <input type="checkbox" id="Badminton" name="Badminton"
+    value="Badminton" >
+    <label for="Badminton">Badminton</label>
+
+    
+    <br>
+    <input type="checkbox" id="Cricket" name="Cricket"
+    value="Cricket" >
+    <label for="Cricket">Cricket</label>
+
+    
+   
+   <br>
+    <input type="checkbox" id="Volleyball" name="Volleyball"
+    value="Volleyball" >
+
+    <label for="Volleyball">Volleyball</label>
+
+    <br>
+    <br>
+
+
+    <label for="Gender">Gender</label>
+    <br>
+    <input type="radio" id="male" name="male" value="male">
+    <label for="male">MALE</label>
+    
+    <input type="radio" id="female" name="female" value="female">
+    <label for="female">FEMALE</label>
+    <br>
+    <br>
+     
+    
+    <label for="Select your age">Select your age</label>
+    <select name="age" id="age" required>
+        <option value="">-- Select Age --</option>
+
+    <!-- Generate ages -->
+    <script>
+        for (let i = 1; i <= 100; i++) {
+            document.write(`<option value="${i}">${i}</option>`);
+        }
+    </script>
+    </select>
+    <br>
+    <br>
+
+    <label for="select your photo">Select Photo</label>
+    <input type="file" id="select your photo" name="select your photo" value="select your photo">
+    <br>
+    <br>
+    <button>CLick me</button>
+    <button>Reset</button>
+    <button>Submit Form</button>
+</body>
+</html>
