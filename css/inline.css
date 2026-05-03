@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#navbar ul{
+
+
+
+    list-style-type: none;
+}
+
+#navbar li {
+    
+    display: inline; /* makes items horizontal */
+    
+}
