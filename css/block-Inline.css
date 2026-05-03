@@ -8,8 +8,21 @@
 
 #block{
     background-color: red;
+    width: 500px;
+    height: 100px;
 }
 
 #span{
     background-color: blue;
+    width: 200px;
+    height: 100px;
+}
+
+#span2{
+    display: inline-block;
+    
+    width: 600px;
+    height: 100px;
+    box-sizing: border-box;
+   
 }

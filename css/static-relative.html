@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position --> static </title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        /* we have  given the top and right value but it is not working beacuse position is static; */
+
+        #static{
+            border: 2px solid black;
+            height: 100px;
+            width: 200px;
+            background-color: red;
+            position: static;
+            top: 100px;
+            right: 100px;
+
+            
+        }
+
+
+        #relative{
+
+             border: 2px solid black;
+            height: 100px;
+            width: 200px;
+            background-color: blue;
+            position: relative;
+            top: 100px;
+            /* right: 100px; */
+            left: 100px;
+
+        }
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <div id="static">
+        
+    </div>
+
+    <div id="relative">
+
+    </div>
+    
+</body>
+</html>

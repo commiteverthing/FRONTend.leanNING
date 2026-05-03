@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #search-bar{
+            position: relative;
+        }
+        input{
+            border: 1px solid black;
+            border-radius: 100px;
+            padding: 10px 20px;
+            font: inherit;
+            border: 1px solid grey;
+
+        }
+        button{
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: #0071FF;
+            fill: white;
+            border: none;
+            border-radius: 50%;
+            position: absolute;
+            right:0;
+        }
+
+    </style>
+</head>
+<body>
+
+        /*
+            Search Bar using position: absolute
+
+            - Parent (#search-bar) is set to position: relative
+            → This makes it the reference point
+
+            - Button is set to position: absolute
+            → It is positioned relative to the parent
+
+            - right: 0 places the button at the right side of the input
+
+            - top: 50% + transform: translateY(-50%)
+            → Centers the button vertically
+
+            - Extra padding is added to input
+            → So text does not overlap with the button
+
+            Key Concept:
+            Absolute element positions itself based on the nearest
+            positioned parent (not static).
+        */
+    <div id="search-bar">
+        <input type="search" placeholder="search">
+        <button>🔍︎</button>
+    </div>
+</body>
+</html>
