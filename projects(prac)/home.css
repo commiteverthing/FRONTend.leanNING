@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header
+{
+    /* border: 2px solid black; */
+    width: 100%;
+    
+}
+
+#navbar li {
+    display: inline-block;
+    
+}
+
+#navbar a{
+    display: inline-block;
+    position: relative;
+    left:800px;
+    bottom: 20px;
+    text-decoration: none;
+    list-style-type: none;
+
+    
+    
+}
+
+
+#hero-section img{
+    display: inline-block;
+    width: 100%;
+
+}
+
+#hero-section h1{
+    display: inline-block;
+    position: relative;
+    bottom: 900px;
+    left: 700px;
+
+}
+
+
+
+#footer{
+    border: 2px solid black;
+    width: 100%;
+   background-color: brown;
+}
