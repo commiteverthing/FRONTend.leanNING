@@ -1,0 +1,22 @@
+*{
+    height: 0;
+    width: 0;
+    box-sizing: border-box;
+
+}
+
+
+#container1{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    
+}
+
+
+#container2 p{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    border: 2px solid black ;
+}
