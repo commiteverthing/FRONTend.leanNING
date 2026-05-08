@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Items</title>
+
+
+    <style>
+
+        #container{ 
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            align-content: start ;
+            
+            
+        }
+
+        #container-1{
+            background-color: green;
+            border: 5px solid black;
+            margin-top: 100px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            align-content: end ;
+            flex-grow: 1;
+
+        }
+
+        #container-center{
+            background-color: blue;
+            border: 5px solid black;
+            margin-top: 100px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            align-content: center ;
+            flex-shrink: 4;
+        }
+
+        
+      
+
+        .box12{
+            border:2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+
+        }
+
+       
+        
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+    
+
+    <div id="container">
+        <div class="box12">Flex-start</div>
+        <div class="box12">Flex-start</div> 
+        <div class="box12">Flex-start</div> 
+        <div class="box12">Flex-start</div> 
+        <div class="box12">Flex-start</div> 
+        
+
+    </div>
+
+
+
+
+    <div id="container-1">
+        <div class="box12">Flex-End</div>
+        <div class="box12">Flex-End</div> 
+        <div class="box12">Flex-End</div> 
+        <div class="box12">Flex-End</div> 
+        <div class="box12">Flex-End</div> 
+        
+
+    </div>
+
+
+     <div id="container-center">
+        <div class="box12">Flex-End</div>
+        <div class="box12">Flex-End</div> 
+        <div class="box12">Flex-End</div> 
+        <div class="box12">Flex-End</div> 
+        <div class="box12">Flex-End</div> 
+        
+
+    </div>
+
+    
+</body>
+</html>
