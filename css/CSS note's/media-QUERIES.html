@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Queries:</title>
+    <style>
+         *,
+        *::before,
+        *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        #change-bck{
+            border: 3px solid black;
+            height: 200px;
+            width: 200px;
+            
+           
+
+        }
+
+        @media screen and (max-width:600px) {
+            #change-bck{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: yellow;
+                margin: 400px;
+                
+            }
+            
+        }
+
+        @media  screen and (min-width:500px) {
+            #input-name{
+                display: block;
+                
+            }
+            
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div id="change-bck">
+
+    </div>
+
+    <div id="input-name">
+        <input type="text" id="input-name" placeholder="enter your screen size:">
+
+    </div>
+</body>
+</html>
