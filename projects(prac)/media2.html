@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Queries</title>
+    <style>
+        *,
+        *::before,
+        *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #header-container{
+          
+            /* border: 2px solid green; */
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        
+            
+            
+
+            
+        }
+
+
+        #logo img{
+            /* border: 2px solid blue; */
+            height: 100px;
+            padding: 6px;
+            border-radius: 50px;
+            
+            
+        }
+        nav ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            cursor: pointer;
+            flex-wrap: wrap;
+           
+            
+            
+            
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            
+            
+        
+        }
+
+
+        #main-container{
+              position: relative;
+            display: flex;
+            
+        }
+
+        #hero-video video{
+            display: flex;
+            width: 100%;
+            height: 1200px;
+            object-fit: cover;
+            
+            
+        }
+        #header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: red;
+            font-family: 'Poppins', sans-serif;
+            font-size: 50px;
+            text-align: center;
+            
+        }
+        #header-text h1{
+           white-space: nowrap;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header id="header-container">
+        <div id="logo">
+            <img src="https://i.pinimg.com/736x/cd/09/cf/cd09cf05562d6589c02813638aa47716.jpg" alt="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About-Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+           
+        </nav>
+       
+    </header>
+        
+    <main id="main-container">
+        <section id="hero-container">
+            <div id="hero-video">
+                <video src="assects/1From KlickPin CF Sunny beach picnic thoughts with charm and ideas for daily inspiration to save for beach days 🐚 - Pin-1070238298956165462.mp4" autoplay muted loop></video>
+
+            </div>
+            <div id="header-text">
+                <h1>Hello by commit@ak</h1>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
