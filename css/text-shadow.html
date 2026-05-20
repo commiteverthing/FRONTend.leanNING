@@ -1,0 +1,348 @@
+```html id="p3g1wu"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS text-shadow Complete Notes</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      line-height: 1.7;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #0077ff;
+    }
+
+    .note-box {
+      background: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-left: 6px solid #0077ff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    pre {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      overflow-x: auto;
+      border-radius: 8px;
+    }
+
+    .example {
+      margin-top: 15px;
+      padding: 15px;
+      background: #fafafa;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #0077ff;
+      color: white;
+    }
+
+    /* inherit example */
+    .parent-inherit {
+      text-shadow: 2px 2px 4px blue;
+    }
+
+    .child-inherit {
+      text-shadow: inherit;
+    }
+
+    /* initial example */
+    .initial {
+      text-shadow: initial;
+    }
+
+    /* revert example */
+    .revert {
+      text-shadow: revert;
+    }
+
+    /* unset example */
+    .parent-unset {
+      text-shadow: 2px 2px 4px green;
+    }
+
+    .child-unset {
+      text-shadow: unset;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>CSS text-shadow Complete Notes</h1>
+
+  <!-- inherit -->
+  <div class="note-box">
+    <h2>1. inherit</h2>
+
+    <p>
+      <code>inherit</code> takes the value from the parent element.
+    </p>
+
+    <pre>
+.parent {
+  text-shadow: 2px 2px 4px blue;
+}
+
+.child {
+  text-shadow: inherit;
+}
+    </pre>
+
+    <div class="example parent-inherit">
+      Parent Text
+      <p class="child-inherit">Child Text using inherit</p>
+    </div>
+  </div>
+
+  <!-- initial -->
+  <div class="note-box">
+    <h2>2. initial</h2>
+
+    <p>
+      <code>initial</code> sets the property to its default value.
+    </p>
+
+    <pre>
+h1 {
+  text-shadow: initial;
+}
+    </pre>
+
+    <div class="example">
+      <h3 class="initial">This text has no shadow</h3>
+    </div>
+  </div>
+
+  <!-- revert -->
+  <div class="note-box">
+    <h2>3. revert</h2>
+
+    <p>
+      <code>revert</code> reverts the property to browser/default stylesheet value.
+    </p>
+
+    <pre>
+.special {
+  text-shadow: revert;
+}
+    </pre>
+
+    <div class="example">
+      <h3 class="revert">Reverted Text Shadow</h3>
+    </div>
+  </div>
+
+  <!-- revert-layer -->
+  <div class="note-box">
+    <h2>4. revert-layer</h2>
+
+    <p>
+      <code>revert-layer</code> reverts the property to the previous CSS layer.
+    </p>
+
+    <pre>
+@layer base {
+  h1 {
+    text-shadow: 2px 2px 4px blue;
+  }
+}
+
+@layer theme {
+  h1 {
+    text-shadow: revert-layer;
+  }
+}
+    </pre>
+
+    <div class="example">
+      <p>Used mainly with modern CSS layers.</p>
+    </div>
+  </div>
+
+  <!-- unset -->
+  <div class="note-box">
+    <h2>5. unset</h2>
+
+    <p>
+      <code>unset</code> acts like inherit for inherited properties.
+    </p>
+
+    <pre>
+.parent {
+  text-shadow: 2px 2px 4px green;
+}
+
+.child {
+  text-shadow: unset;
+}
+    </pre>
+
+    <div class="example parent-unset">
+      Parent Text
+      <p class="child-unset">Child Text using unset</p>
+    </div>
+  </div>
+
+  <!-- Syntax Examples -->
+  <div class="note-box">
+
+    <h2>6. Different text-shadow Syntax Examples</h2>
+
+    <!-- Example 1 -->
+    <h3>1. offset-x | offset-y | blur-radius | color</h3>
+
+    <pre>
+text-shadow: 1px 1px 2px black;
+    </pre>
+
+    <div class="example">
+      <p style="text-shadow: 1px 1px 2px black; font-size: 24px;">
+        Black Shadow Example
+      </p>
+    </div>
+
+    <hr>
+
+    <!-- Example 2 -->
+    <h3>2. color | offset-x | offset-y | blur-radius</h3>
+
+    <pre>
+text-shadow: #ffcc00 1px 0 10px;
+    </pre>
+
+    <div class="example">
+      <p style="text-shadow: #ffcc00 1px 0 10px; font-size: 24px;">
+        Yellow Glow Shadow
+      </p>
+    </div>
+
+    <hr>
+
+    <!-- Example 3 -->
+    <h3>3. offset-x | offset-y | color</h3>
+
+    <pre>
+text-shadow: 5px 5px #558abb;
+    </pre>
+
+    <div class="example">
+      <p style="text-shadow: 5px 5px #558abb; font-size: 24px;">
+        Blue Shadow Example
+      </p>
+    </div>
+
+    <hr>
+
+    <!-- Example 4 -->
+    <h3>4. color | offset-x | offset-y</h3>
+
+    <pre>
+text-shadow: white 2px 5px;
+    </pre>
+
+    <div class="example" style="background:black; color:white;">
+      <p style="text-shadow: white 2px 5px; font-size: 24px;">
+        White Shadow Example
+      </p>
+    </div>
+
+    <hr>
+
+    <!-- Example 5 -->
+    <h3>5. offset-x | offset-y</h3>
+
+    <p>
+      Uses default color and blur-radius.
+    </p>
+
+    <pre>
+text-shadow: 5px 10px;
+    </pre>
+
+    <div class="example">
+      <p style="text-shadow: 5px 10px; font-size: 24px;">
+        Default Shadow Example
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Summary Table -->
+  <table>
+
+    <tr>
+      <th>Value</th>
+      <th>Meaning</th>
+    </tr>
+
+    <tr>
+      <td>inherit</td>
+      <td>Takes value from parent</td>
+    </tr>
+
+    <tr>
+      <td>initial</td>
+      <td>Sets default value (none)</td>
+    </tr>
+
+    <tr>
+      <td>revert</td>
+      <td>Reverts to browser/default style</td>
+    </tr>
+
+    <tr>
+      <td>revert-layer</td>
+      <td>Reverts to previous CSS layer</td>
+    </tr>
+
+    <tr>
+      <td>unset</td>
+      <td>Acts like inherit for text-shadow</td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
+```

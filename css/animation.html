@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation game:</title>
+  <style>
+   
+   .container{
+    background-color:rgb(39, 232, 0);
+    height: 1000vh;
+    width: 1000vh;
+   }
+
+    #box-upper{
+      border: 2px solid black;
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      display: flex;
+      position: relative;
+      animation-name: upper-box;
+      animation: 5s ease-in 1s infinite alternate none running upper-box;
+      
+    }
+
+    @keyframes  upper-box {
+      from{
+        top: 0;
+        left: 0;
+      }
+      to{
+        left: 1600px;
+        right: 1600px;
+      }
+      
+    }
+
+
+      #box-down{
+        border: 2px solid yellow;
+        width: 200px;
+        height: 100px;
+        background-color: black;
+        display: flex;
+        position: relative;
+        animation-name: lower-box;
+        animation: 5s ease-in 1s infinite reverse none running lower-box;
+      
+      }
+    
+    @keyframes  lower-box {
+        from{
+          top: 680px;
+          left: 1600px;
+        }
+        to{
+          top:680px;
+          left: 0;
+        }
+        
+      }
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="box-upper"></div>
+    
+    <div id="box-down"></div>
+    
+  </div>
+</body>
+</html>
